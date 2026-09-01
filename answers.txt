@@ -1,0 +1,4 @@
+1. What message appears after running git init?
+Initialized empty Git repository in C:/Users/Student/Desktop/git khalil/.git/
+2. What hidden folder was created?
+.git
