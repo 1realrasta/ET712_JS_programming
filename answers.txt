@@ -1,4 +1,20 @@
+Lab Repo
 1. What message appears after running git init?
 Initialized empty Git repository in C:/Users/Student/Desktop/git khalil/.git/
 2. What hidden folder was created?
 .git
+Lab Part 3 – Check Repository Status
+What color is the filename?
+red
+What does "Untracked" mean?
+the file is not saved to the repo
+Why do you think Git requires a staging area?
+to be able to select files
+What is the commit message?
+initial commit
+What is display after running git log?
+commit 1fe1b9d473d935ca58ec48d2bcc5c92e1c373d45 (HEAD -> master)
+Author: khalil. harriott <khalil.harriott12@student.qcc.cuny.edu>
+Date:   Tue Sep 1 15:21:06 2026 -0400
+Do you see the changes in the remote repository?
+i can see it in my local repo but not my remote repo
