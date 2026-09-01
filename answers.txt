@@ -18,3 +18,5 @@ Author: khalil. harriott <khalil.harriott12@student.qcc.cuny.edu>
 Date:   Tue Sep 1 15:21:06 2026 -0400
 Do you see the changes in the remote repository?
 i can see it in my local repo but not my remote repo
+Do you see the changes in the remote repository?
+yes
