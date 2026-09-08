@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova — Simple, Powerful Software</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #080b14;
+      --card: #111625;
+      --card-hover: #151b2d;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #7c3aed;
+      --primary-light: #a78bfa;
+      --border: rgba(255, 255, 255, 0.09);
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(124, 58, 237, 0.28), transparent 38%),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    nav {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .logo span {
+      color: var(--primary-light);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .nav-button {
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: white;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 110px 0 100px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(167, 139, 250, 0.25);
+      border-radius: 999px;
+      background: rgba(124, 58, 237, 0.08);
+      color: var(--primary-light);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #22c55e;
+    }
+
+    .hero h1 {
+      max-width: 800px;
+      margin: 0 auto 22px;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1.02;
+      letter-spacing: -0.065em;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, #a78bfa, #c084fc, #818cf8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto 34px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: #6d28d9;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    /* Pricing */
+    .pricing {
+      padding: 40px 0 110px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.04em;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .pricing-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(17, 22, 37, 0.8);
+      transition: 0.25s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: rgba(167, 139, 250, 0.3);
+    }
+
+    .pricing-card.popular {
+      border-color: rgba(124, 58, 237, 0.65);
+      box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+    }
+
+    .popular-label {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .pricing-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      min-height: 50px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .price {
+      margin: 25px 0;
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: normal;
+    }
+
+    .features {
+      list-style: none;
+      margin: 5px 0 30px;
+      color: #cbd5e1;
+      flex: 1;
+    }
+
+    .features li {
+      margin: 13px 0;
+      font-size: 0.92rem;
+    }
+
+    .features li::before {
+      content: "✓";
+      margin-right: 10px;
+      color: #a78bfa;
+      font-weight: 800;
+    }
+
+    .card-button {
+      width: 100%;
+      border: 1px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .popular .card-button {
+      border: none;
+      background: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 80px 0 70px;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .pricing-card.popular {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .pricing-card {
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">no<span>va</span></a>
+
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#pricing" class="nav-button">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge">Now available for everyone</div>
+
+        <h1>
+          Build faster.<br />
+          <span>Ship better.</span>
+        </h1>
+
+        <p>
+          Nova gives modern teams everything they need to plan,
+          collaborate, and launch exceptional products without the busywork.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#pricing" class="btn btn-primary">
+            Start for free →
+          </a>
+          <a href="#features" class="btn btn-secondary">
+            Explore features
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Simple, transparent pricing</h2>
+          <p>Start free. Upgrade when your team is ready.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Starter -->
+          <article class="pricing-card">
+            <h3>Starter</h3>
+            <p class="description">
+              Everything you need to get started.
+            </p>
+
+            <div class="price">
+              $0 <small>/ month</small>
+            </div>
+
+            <ul class="features">
+              <li>Up to 3 projects</li>
+              <li>5 team members</li>
+              <li>Basic analytics</li>
+              <li>Community support</li>
+            </ul>
+
+            <a href="#" class="btn card-button">
+              Get started
+            </a>
+          </article>
+
+          <!-- Pro -->
+          <article class="pricing-card popular">
+            <div class="popular-label">Most popular</div>
+
+            <h3>Pro</h3>
+            <p class="description">
+              Powerful tools for growing teams.
+            </p>
+
+            <div class="price">
+              $29 <small>/ month</small>
+            </div>
+
+            <ul class="features">
+              <li>Unlimited projects</li>
+              <li>Unlimited team members</li>
+              <li>Advanced analytics</li>
+              <li>Automations</li>
+              <li>Priority support</li>
+            </ul>
+
+            <a href="#" class="btn card-button">
+              Start free trial
+            </a>
+          </article>
+
+          <!-- Business -->
+          <article class="pricing-card">
+            <h3>Business</h3>
+            <p class="description">
+              Advanced control for larger organizations.
+            </p>
+
+            <div class="price">
+              $79 <small>/ month</small>
+            </div>
+
+            <ul class="features">
+              <li>Everything in Pro</li>
+              <li>Advanced permissions</li>
+              <li>SSO & security controls</li>
+              <li>Custom integrations</li>
+              <li>Dedicated support</li>
+            </ul>
+
+            <a href="#" class="btn card-button">
+              Contact sales
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Nova. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
