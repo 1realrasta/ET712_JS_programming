@@ -1,0 +1,111 @@
+/* General Page Styles */
+body {
+font-family: Arial, sans-serif;
+background-color: #eaf8f8;
+color: #f7f8f8;
+margin: 0;
+padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+background-color: #006d77 !important;
+}
+
+.navbar-brand {
+font-size: 1.5rem;
+font-weight: bold;
+color: #ffffff !important;
+}
+
+.nav-link {
+color: #ffffff !important;
+font-weight: 500;
+}
+
+.nav-link:hover {
+color: #ffd166 !important;
+}
+
+/* Main Content */
+main {
+max-width: 1000px;
+margin: 40px auto;
+padding: 30px;
+}
+
+/* Main Heading */
+h1 {
+color: #ffffff;
+font-size: 2.5rem;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+}
+
+/* Section Headings */
+h2 {
+color: #e76f51;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+font-size: 1.1rem;
+line-height: 1.7;
+}
+
+/* Destination Sections */
+main h2 {
+border-bottom: 2px solid #83c5be;
+padding-bottom: 8px;
+}
+
+/* Hover Effect for Destination Headings */
+main h2:hover {
+color: #ffffff;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+main {
+margin: 20px;
+padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+}
+.home-page {
+    background-image: url("images/images/ocean.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.destinations-page {
+    background-image: url("images/images/beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+    .plan-page {
+    background-image: url("images/images/plane.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
