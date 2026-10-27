@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Learners</title>
+    <link rel="stylesheet" href="prek.css" />
+  </head>
+  <body id="top">
+    <header class="site-header" id="home">
+      <div class="brand-wrap">
+        <div class="brand-icon" aria-hidden="true">🌈</div>
+        <div>
+          <p class="brand-tag">Pre-K Learning Adventure</p>
+          <h1>Little Learners</h1>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation" class="main-nav">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#shapes">Shapes</a></li>
+          <li><a href="#animals">Animals</a></li>
+          <li><a href="#numbers">Numbers</a></li>
+          <li><a href="#colors">Colors</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Play and discover</p>
+          <h2 id="hero-title">Learning is fun with bright ideas!</h2>
+          <p>
+            Explore shapes, animals, numbers, and colors with cheerful activities designed for
+            little learners. Click a card to discover a new idea and build confidence while having fun.
+          </p>
+          <div class="hero-actions">
+            <a href="#shapes" class="btn btn-primary">Start learning</a>
+            <a href="#numbers" class="btn btn-secondary">Try numbers</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <span class="float-item yellow">🔺</span>
+          <span class="float-item pink">🐶</span>
+          <span class="float-item blue">1</span>
+          <span class="float-item green">🟢</span>
+          <span class="float-item orange">⭐</span>
+        </div>
+      </section>
+
+      <aside class="learning-spotlight" aria-live="polite">
+        <p class="spotlight-label">Learning spotlight</p>
+        <h3 id="spotlightTitle">Rainbow</h3>
+        <div id="spotlightEmoji" class="spotlight-emoji" aria-hidden="true">🌈</div>
+        <p id="spotlightText">A rainbow is made of many bright colors after the rain.</p>
+      </aside>
+
+      <section id="shapes" class="skill-section" aria-labelledby="shapes-title">
+        <div class="section-heading">
+          <p class="section-badge">Skill 1</p>
+          <h2 id="shapes-title">Shapes</h2>
+        </div>
+
+        <div class="feature-panel shape-panel">
+          <p>Shape surprise box</p>
+          <button id="shapeModalBtn" class="feature-btn" type="button">Open a shape mystery</button>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card active" tabindex="0" data-skill="Circle" data-emoji="⚪" data-text="A circle is round and has no corners.">
+            <span class="card-emoji" aria-hidden="true">⚪</span>
+            <h3>Circle</h3>
+            <p>Round like a sunny clock.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Square" data-emoji="🟦" data-text="A square has four equal sides and four corners.">
+            <span class="card-emoji" aria-hidden="true">🟦</span>
+            <h3>Square</h3>
+            <p>Four equal sides make it square.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Triangle" data-emoji="🔺" data-text="A triangle has three sides and three corners.">
+            <span class="card-emoji" aria-hidden="true">🔺</span>
+            <h3>Triangle</h3>
+            <p>Three sides climb to a point.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Rectangle" data-emoji="▭" data-text="A rectangle has four sides, with two long and two short.">
+            <span class="card-emoji" aria-hidden="true">▭</span>
+            <h3>Rectangle</h3>
+            <p>Like a door or a book.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Star" data-emoji="⭐" data-text="A star has five points and shines brightly.">
+            <span class="card-emoji" aria-hidden="true">⭐</span>
+            <h3>Star</h3>
+            <p>Bright and twinkly in the sky.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Heart" data-emoji="💖" data-text="A heart is a shape that shows love and kindness.">
+            <span class="card-emoji" aria-hidden="true">💖</span>
+            <h3>Heart</h3>
+            <p>It is the shape of love.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Oval" data-emoji="🥚" data-text="An oval is like a stretched circle.">
+            <span class="card-emoji" aria-hidden="true">🥚</span>
+            <h3>Oval</h3>
+            <p>Long and soft like an egg.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Diamond" data-emoji="🔶" data-text="A diamond has four sides that meet at sharp points.">
+            <span class="card-emoji" aria-hidden="true">🔶</span>
+            <h3>Diamond</h3>
+            <p>Shiny and strong like a gem.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Hexagon" data-emoji="⬡" data-text="A hexagon has six sides and six corners.">
+            <span class="card-emoji" aria-hidden="true">⬡</span>
+            <h3>Hexagon</h3>
+            <p>Six sides make a bee hive shape.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Crescent" data-emoji="🌙" data-text="A crescent is a curved shape like a tiny moon.">
+            <span class="card-emoji" aria-hidden="true">🌙</span>
+            <h3>Crescent</h3>
+            <p>Soft and curved like the moon.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="animals" class="skill-section" aria-labelledby="animals-title">
+        <div class="section-heading">
+          <p class="section-badge">Skill 2</p>
+          <h2 id="animals-title">Animals</h2>
+        </div>
+
+        <div class="feature-panel animal-panel">
+          <div class="animal-slide" aria-live="polite">
+            <div id="animalIcon" class="animal-icon">🐶</div>
+            <h3 id="animalSlideTitle">Dog</h3>
+            <p id="animalSlideText">Dogs love to play fetch and wag their tails.</p>
+          </div>
+          <div class="slide-controls">
+            <button id="prevAnimal" class="feature-btn secondary" type="button">← Prev</button>
+            <button id="nextAnimal" class="feature-btn" type="button">Next →</button>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card" tabindex="0" data-skill="Dog" data-emoji="🐶" data-text="A dog is a loyal friend that barks and plays.">
+            <span class="card-emoji" aria-hidden="true">🐶</span>
+            <h3>Dog</h3>
+            <p>Best friend with floppy ears.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Cat" data-emoji="🐱" data-text="A cat is curious and loves to purr.">
+            <span class="card-emoji" aria-hidden="true">🐱</span>
+            <h3>Cat</h3>
+            <p>Soft paws and whiskers.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Bird" data-emoji="🐦" data-text="A bird has feathers and can fly through the air.">
+            <span class="card-emoji" aria-hidden="true">🐦</span>
+            <h3>Bird</h3>
+            <p>It sings in the morning sky.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Cow" data-emoji="🐮" data-text="A cow gives milk and grazes in green fields.">
+            <span class="card-emoji" aria-hidden="true">🐮</span>
+            <h3>Cow</h3>
+            <p>Moo! It loves to chew grass.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Frog" data-emoji="🐸" data-text="A frog hops near ponds and loves to croak.">
+            <span class="card-emoji" aria-hidden="true">🐸</span>
+            <h3>Frog</h3>
+            <p>Jump, jump, into the pond.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Fish" data-emoji="🐟" data-text="A fish swims in water with fins and gills.">
+            <span class="card-emoji" aria-hidden="true">🐟</span>
+            <h3>Fish</h3>
+            <p>Swim with the sea stars.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Bear" data-emoji="🐻" data-text="A bear is a big furry animal that hibernates in winter.">
+            <span class="card-emoji" aria-hidden="true">🐻</span>
+            <h3>Bear</h3>
+            <p>Big paws and strong hugs.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Lion" data-emoji="🦁" data-text="A lion is the king of the jungle and roars loudly.">
+            <span class="card-emoji" aria-hidden="true">🦁</span>
+            <h3>Lion</h3>
+            <p>Majestic mane and mighty roar.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Horse" data-emoji="🐎" data-text="A horse runs fast and can carry riders.">
+            <span class="card-emoji" aria-hidden="true">🐎</span>
+            <h3>Horse</h3>
+            <p>Gallop across the meadow.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Elephant" data-emoji="🐘" data-text="An elephant is huge, gentle, and uses its trunk to explore.">
+            <span class="card-emoji" aria-hidden="true">🐘</span>
+            <h3>Elephant</h3>
+            <p>Big ears and a helpful trunk.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="numbers" class="skill-section" aria-labelledby="numbers-title">
+        <div class="section-heading">
+          <p class="section-badge">Skill 3</p>
+          <h2 id="numbers-title">Numbers</h2>
+        </div>
+
+        <div class="feature-panel number-panel">
+          <p class="mini-label">Count the stars</p>
+          <div id="numberVisual" class="number-visual">⭐ ⭐ ⭐</div>
+          <p id="numberPrompt">How many stars do you see?</p>
+          <div class="count-options">
+            <button class="count-btn" data-answer="1" type="button">1</button>
+            <button class="count-btn" data-answer="2" type="button">2</button>
+            <button class="count-btn" data-answer="3" type="button">3</button>
+            <button class="count-btn" data-answer="4" type="button">4</button>
+            <button class="count-btn" data-answer="5" type="button">5</button>
+            <button class="count-btn" data-answer="6" type="button">6</button>
+            <button class="count-btn" data-answer="7" type="button">7</button>
+            <button class="count-btn" data-answer="8" type="button">8</button>
+            <button class="count-btn" data-answer="9" type="button">9</button>
+            <button class="count-btn" data-answer="10" type="button">10</button>
+          </div>
+          <p id="numberFeedback" class="feedback">Pick a number!</p>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card" tabindex="0" data-skill="Number 1" data-emoji="1️⃣" data-text="One is the first number and starts the counting path.">
+            <span class="card-emoji" aria-hidden="true">1️⃣</span>
+            <h3>1</h3>
+            <p>One little star shines first.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 2" data-emoji="2️⃣" data-text="Two means a pair, like two eyes and two ears.">
+            <span class="card-emoji" aria-hidden="true">2️⃣</span>
+            <h3>2</h3>
+            <p>Two hands clap together.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 3" data-emoji="3️⃣" data-text="Three can be three friends playing together.">
+            <span class="card-emoji" aria-hidden="true">3️⃣</span>
+            <h3>3</h3>
+            <p>Three happy hops in a row.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 4" data-emoji="4️⃣" data-text="Four is a great number for four legs on a table.">
+            <span class="card-emoji" aria-hidden="true">4️⃣</span>
+            <h3>4</h3>
+            <p>Four legs on a sturdy chair.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 5" data-emoji="5️⃣" data-text="Five fingers can wave hello and count high.">
+            <span class="card-emoji" aria-hidden="true">5️⃣</span>
+            <h3>5</h3>
+            <p>Five little fingers on one hand.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 6" data-emoji="6️⃣" data-text="Six is counting more friends in a line.">
+            <span class="card-emoji" aria-hidden="true">6️⃣</span>
+            <h3>6</h3>
+            <p>Six crayons in a rainbow box.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 7" data-emoji="7️⃣" data-text="Seven is a happy number for a week of learning.">
+            <span class="card-emoji" aria-hidden="true">7️⃣</span>
+            <h3>7</h3>
+            <p>Seven days make a full week.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 8" data-emoji="8️⃣" data-text="Eight can be the number of legs on a spider.">
+            <span class="card-emoji" aria-hidden="true">8️⃣</span>
+            <h3>8</h3>
+            <p>Eight tiny legs on a spider.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 9" data-emoji="9️⃣" data-text="Nine is a counting number that comes before ten.">
+            <span class="card-emoji" aria-hidden="true">9️⃣</span>
+            <h3>9</h3>
+            <p>Nine busy blocks on the floor.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Number 10" data-emoji="🔟" data-text="Ten is a big milestone, and we count all the way to ten.">
+            <span class="card-emoji" aria-hidden="true">🔟</span>
+            <h3>10</h3>
+            <p>Ten is a big number to count to.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="colors" class="skill-section" aria-labelledby="colors-title">
+        <div class="section-heading">
+          <p class="section-badge">Skill 4</p>
+          <h2 id="colors-title">Colors</h2>
+        </div>
+
+        <div class="feature-panel color-panel">
+          <div id="colorPreview" class="color-preview" aria-label="Selected color preview"></div>
+          <div class="color-palette">
+            <button class="color-swatch" data-color="Red" data-hex="#ff6b6b" style="background:#ff6b6b" type="button">Red</button>
+            <button class="color-swatch" data-color="Blue" data-hex="#5dade2" style="background:#5dade2" type="button">Blue</button>
+            <button class="color-swatch" data-color="Yellow" data-hex="#ffd166" style="background:#ffd166" type="button">Yellow</button>
+            <button class="color-swatch" data-color="Green" data-hex="#66d98d" style="background:#66d98d" type="button">Green</button>
+            <button class="color-swatch" data-color="Purple" data-hex="#b39ddb" style="background:#b39ddb" type="button">Purple</button>
+            <button class="color-swatch" data-color="Orange" data-hex="#ffb347" style="background:#ffb347" type="button">Orange</button>
+            <button class="color-swatch" data-color="Pink" data-hex="#ff8ec7" style="background:#ff8ec7" type="button">Pink</button>
+            <button class="color-swatch" data-color="Brown" data-hex="#a66a3d" style="background:#a66a3d" type="button">Brown</button>
+            <button class="color-swatch" data-color="Black" data-hex="#2f2f2f" style="background:#2f2f2f" type="button">Black</button>
+            <button class="color-swatch" data-color="White" data-hex="#f4f4f4" style="background:#f4f4f4; color:#333;" type="button">White</button>
+          </div>
+          <p id="colorFact">Tap a color to learn a fun fact.</p>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card" tabindex="0" data-skill="Red" data-emoji="🔴" data-text="Red is a warm color like a juicy apple.">
+            <span class="card-emoji" aria-hidden="true">🔴</span>
+            <h3>Red</h3>
+            <p>Like a strawberry or a stop sign.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Blue" data-emoji="🔵" data-text="Blue is the color of the sky and the ocean.">
+            <span class="card-emoji" aria-hidden="true">🔵</span>
+            <h3>Blue</h3>
+            <p>Like the sky above us.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Yellow" data-emoji="🟡" data-text="Yellow is cheerful and bright like sunshine.">
+            <span class="card-emoji" aria-hidden="true">🟡</span>
+            <h3>Yellow</h3>
+            <p>Sunny as a smiling sunbeam.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Green" data-emoji="🟢" data-text="Green is the color of grass, leaves, and nature.">
+            <span class="card-emoji" aria-hidden="true">🟢</span>
+            <h3>Green</h3>
+            <p>Fresh like a leafy tree.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Purple" data-emoji="🟣" data-text="Purple is a magical color like grapes and flowers.">
+            <span class="card-emoji" aria-hidden="true">🟣</span>
+            <h3>Purple</h3>
+            <p>Like a royal grape cluster.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Orange" data-emoji="🟠" data-text="Orange is bright and happy like a carrot or pumpkin.">
+            <span class="card-emoji" aria-hidden="true">🟠</span>
+            <h3>Orange</h3>
+            <p>Sunny and sweet like citrus fruit.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Pink" data-emoji="🩷" data-text="Pink is soft and sweet like a flower or a balloon.">
+            <span class="card-emoji" aria-hidden="true">🩷</span>
+            <h3>Pink</h3>
+            <p>Soft like a lovely candyfloss.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Brown" data-emoji="🟤" data-text="Brown is cozy and earthy, like tree bark and chocolate.">
+            <span class="card-emoji" aria-hidden="true">🟤</span>
+            <h3>Brown</h3>
+            <p>Warm like a teddy bear.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="Black" data-emoji="⚫" data-text="Black is a dark color like night or a pencil.">
+            <span class="card-emoji" aria-hidden="true">⚫</span>
+            <h3>Black</h3>
+            <p>Dark as the nighttime sky.</p>
+          </article>
+
+          <article class="skill-card" tabindex="0" data-skill="White" data-emoji="⚪" data-text="White is a light color like clouds and snow.">
+            <span class="card-emoji" aria-hidden="true">⚪</span>
+            <h3>White</h3>
+            <p>Bright like fluffy clouds.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Little Learners © 2026</p>
+      <p>Explore, play, and grow every day.</p>
+    </footer>
+
+    <button id="goTopBtn" class="go-top" type="button" aria-label="Go to top">↑</button>
+
+    <div id="shapeModal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="shapeModalTitle">
+        <button id="closeShapeModal" class="modal-close" type="button" aria-label="Close modal">✕</button>
+        <p class="modal-label">Shape surprise</p>
+        <div id="shapeModalEmoji" class="modal-emoji">⚪</div>
+        <h3 id="shapeModalTitle">Circle</h3>
+        <p id="shapeModalText">A circle is round and has no corners.</p>
+      </div>
+    </div>
+
+    <script src="prek.js"></script>
+  </body>
+</html>
