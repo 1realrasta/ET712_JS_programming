@@ -1,0 +1,137 @@
+/* Responsive breakpoints for Little Learners */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem 1.25rem;
+  }
+
+  .brand-wrap {
+    width: 100%;
+  }
+
+  .main-nav ul {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .main-nav a {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 1.3rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero-copy p {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-art {
+    min-height: 180px;
+  }
+
+  .float-item {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .learning-spotlight {
+    margin-top: 1.5rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .skill-card {
+    min-height: 170px;
+    padding: 0.9rem 0.7rem;
+  }
+
+  .color-palette {
+    gap: 0.6rem;
+  }
+
+  .color-swatch {
+    min-width: 72px;
+    padding: 0.7rem 0.8rem;
+    font-size: 0.82rem;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 1.7rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+
+  .site-header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .main-nav ul {
+    gap: 0.5rem;
+  }
+
+  .learning-spotlight {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(5, minmax(140px, 1fr));
+  }
+
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
